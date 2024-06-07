@@ -38,7 +38,7 @@ namespace Laba3
             cmbCol.Items.AddRange("passenger car", "Truck", "Airplane");
             dataGridView1.Columns.Add(cmbCol);
             dataGridView1.Columns["CarTip"].DisplayIndex = dataGridView1.ColumnCount - 1;
-            pictureBox1.Image = Image.FromFile("C:/Users/Артём Морозов/Desktop/Хлам/кот.gif");
+            pictureBox1.Image = (Image)Properties.Resources.ResourceManager.GetObject("кот.gif");
         }          
         private void SetupDataGridView()
         {
